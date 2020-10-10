@@ -25,10 +25,8 @@ public class CreateAccountTests extends TestBase{
         Assert.assertTrue(isElementPresent(By.cssSelector("form.signup__fields")));
         //fill registration form
 
-        type(By.cssSelector("#first_name"), "MA");
-        type(By.cssSelector("#second_name"),"SHA");
-        type(By.cssSelector("#email"),"foxqa25-3@qa.co");
-        type(By.cssSelector("#password"),"FoXfOxFoX1");
+        fillRegistrationForm("MA", "SHA", "foxqa25-3@qa.co", "FoXfOxFoX1");
+        fillRegistrationForm("SA","SHA","sasha1309@gmail.com","13FoXfOxFoX");
 
         click(By.cssSelector("#check_policy"));
         //click submit button
@@ -37,8 +35,15 @@ public class CreateAccountTests extends TestBase{
         Assert.assertTrue(isLoginFromPresent());
     }
 
-
+    public void fillRegistrationForm(String firstName, String secondName, String email, String password) {
+        type(By.cssSelector("#first_name"), firstName);
+        type(By.cssSelector("#second_name"), secondName);
+        type(By.cssSelector("#email"), email);
+        type(By.cssSelector("#password"), password);
     }
+
+
+}
 
 
 
