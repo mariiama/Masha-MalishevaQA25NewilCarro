@@ -23,8 +23,20 @@ public class CreateAccountTests extends TestBase{
         Assert.assertTrue(isElementPresent(By.cssSelector("form.signup__fields")));
         //fill registration form
 
-        fillRegistrationForm("MA", "SHA", "foxqa25-4@qa.co", "FoXfOxFoX1");
-        fillRegistrationForm("SA","SHA","sasha1308@gmail.com","13FoXfOxFoX");
+       // fillRegistrationForm(new User("MA", "SHA", "foxqa25-4@qa.co", "FoXfOxFoX1"));
+        fillRegistrationForm(new User()
+                .withFirstName("SA")
+                .withSecondName("SHA")
+                .withEmail("sasha1308@gmail.com")
+                .withPassword("13FoXfOxFoX"));
+
+        //user not have password
+        fillRegistrationForm(new User()
+        .withFirstName("MI")
+        .withSecondName("SHA")
+        .withEmail("foxqa25-5@qa.co"));
+       // .withPassword("fOxFoXfOx2"));
+
 
         click(By.cssSelector("#check_policy"));
         pausa(3000);
@@ -40,11 +52,12 @@ public class CreateAccountTests extends TestBase{
     }
 
 
-    public void fillRegistrationForm(String firstName, String secondName, String email, String password) {
-        type(By.cssSelector("#first_name"), firstName);
-        type(By.cssSelector("#second_name"), secondName);
-        type(By.cssSelector("#email"), email);
-        type(By.cssSelector("#password"), password);
+    public void fillRegistrationForm(User user) {
+        //test only email + password
+        type(By.name("first_name"), user.getFirstName());
+        type(By.name("second_name"), user.getSecondName());
+        type(By.name("email"), user.getEmail());
+        type(By.name("password"), user.getPassword());
     }
 
 
