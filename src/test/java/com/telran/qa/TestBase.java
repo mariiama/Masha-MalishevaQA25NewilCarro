@@ -140,5 +140,7 @@ public class TestBase {
     public boolean isPresentElementSearch2(){
         return wd.findElements(By.xpath("//footer/section[1]/div[2]/div[2]/div[1]/ul[1]/li[1]/a[1]")).size()>0;
     }
+    //LetCar
+
 
 }

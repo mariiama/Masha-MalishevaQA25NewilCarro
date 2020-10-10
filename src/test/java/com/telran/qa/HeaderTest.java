@@ -18,7 +18,7 @@ public class HeaderTest extends TestBase {
     public void testHeader(){
         click(By.cssSelector("[href='/login']"));
         click(By.cssSelector("[href='/signup']"));
-        click(By.xpath(" //header/section[1]/ul[1]/li[1]/a[1]"));
+        click(By.xpath("//header/section[1]/ul[1]/li[1]/a[1]"));
         click(By.xpath("//header/section[1]/ul[1]/li[2]/a[1]"));
 
     }
