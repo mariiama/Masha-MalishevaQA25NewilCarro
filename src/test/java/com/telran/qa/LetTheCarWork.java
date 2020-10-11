@@ -12,14 +12,14 @@ public class LetTheCarWork extends TestBase {
     }
     @Test
     public void testFromLetTheCar(){
-        type(By.cssSelector("name='country'"),"Israel");
+        type(By.cssSelector("[name='country']"),"Israel");
         type(By.cssSelector(".address"),"Jerusalem Street");
         type(By.cssSelector(".distance_included"),"500");
         type(By.cssSelector(".serial_number"),"13-09-2002");
         type(By.cssSelector(".brand"),"Mazda");
         type(By.cssSelector(".model"),"CX-9");
         type(By.cssSelector(".year"),"2016");
-        type(By.cssSelector(".engine"),"2,5");
+        type(By.cssSelector(".engine"),"2.5");
         type(By.cssSelector(".fuel_consumption"),"8");
         type(By.cssSelector(".fuel"),"petrol");
         type(By.cssSelector(".transmition"),"automatic");
@@ -29,7 +29,7 @@ public class LetTheCarWork extends TestBase {
         type(By.cssSelector(".doors"),"5");
         type(By.cssSelector(".seats"),"7");
         type(By.cssSelector(".class"),"A");
-        type(By.cssSelector("about"),"Crossover manufactured by the Japanese automobile company Mazda");
+        type(By.cssSelector("[name='about']"),"Crossover manufactured by the Japanese");
         type(By.cssSelector(".type_feature"),"Car,category A");
         type(By.cssSelector(".price"),"300");
 
