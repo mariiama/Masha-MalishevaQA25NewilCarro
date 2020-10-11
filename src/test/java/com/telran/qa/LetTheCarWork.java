@@ -14,28 +14,28 @@ public class LetTheCarWork extends TestBase {
     @Test
     public void testFromLetTheCar(){
         //"positive test"
-     // filleRegistrationFormCar(
-        //  new NewCar("Israel", "Bora Street", "500",
-           //          "11-01-2112", "Ford", "Focus", "2013",
-            //          "1.6", "7", "petrol", "automatic",
-               //       "four-wheel drive", "200", "5000", "4", "6",
-                  //    "B", "Crossover manufactured by the America",
-                 //     "Car,category B", "100"));
-
-
-
-        //"negativ test"
-      filleRegistrationFormCar(new NewCar()
-              .withCountry("Israel").withAddress("Osher Street").withDistance_included("500")
-      .withSerial_number("07-07-1999").withBrand("Mazda").withModel("CX-9").withYear("2019")
-      .setEngine("2.8").setFuel_consumption("").setFuel("patrol").setTransmition("automat")
-      .setWd("four-wheel drive").setHorsepower("").setTorque("").setDoors("5").setSeats("7")
-      .setClaSS("A").setAbout("").setTypeFeatere("").setPrice(""));
+     filleRegistrationFormCar(new NewCar("Israel", "Bora Street", "500",
+           "11-01-2112", "Ford", "Focus", "2013",
+             "1.6", "7", "petrol", "automatic",
+              "four-wheel drive", "200", "5000", "4", "6",
+               "B", "Crossover manufactured by the America",
+                "Car,category B", "100"));
 
 
         submitForm();
         Assert.assertTrue(isPresentElementLetTheCarWork());
-       
+
+    }
+    @Test
+    public void NegativeTest(){
+        //"negativ test"
+        filleRegistrationFormCar(new NewCar()
+                .withCountry("Israel").withAddress("Osher Street").withDistance_included("500")
+                .withSerial_number("07-07-1999").withBrand("Mazda").withModel("CX-9").withYear("2019")
+                .setEngine("2.8").setFuel_consumption("").setFuel("patrol").setTransmition("automat")
+                .setWd("four-wheel drive").setHorsepower("").setTorque("").setDoors("").setSeats("7")
+                .setClaSS("A").setAbout("").setTypeFeatere("").setPrice(""));
+
     }
 
 

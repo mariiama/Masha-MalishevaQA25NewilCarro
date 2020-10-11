@@ -76,10 +76,12 @@ public class TestBase {
     }
 
     public void type(By locator, String text) {
-        click(locator);
-        wd.findElement(locator).click();
-        wd.findElement(locator).clear();
-        wd.findElement(locator).sendKeys(text);
+        if(text!=null) {
+            click(locator);
+            wd.findElement(locator).click();
+            wd.findElement(locator).clear();
+            wd.findElement(locator).sendKeys(text);
+        }
     }
 
     public void click(By locator){
