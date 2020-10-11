@@ -1,6 +1,7 @@
 package com.telran.qa;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -12,27 +13,52 @@ public class LetTheCarWork extends TestBase {
     }
     @Test
     public void testFromLetTheCar(){
-        type(By.cssSelector("[name='country']"),"Israel");
-        type(By.cssSelector(".address"),"Jerusalem Street");
-        type(By.cssSelector(".distance_included"),"500");
-        type(By.cssSelector(".serial_number"),"13-09-2002");
-        type(By.cssSelector(".brand"),"Mazda");
-        type(By.cssSelector(".model"),"CX-9");
-        type(By.cssSelector(".year"),"2016");
-        type(By.cssSelector(".engine"),"2.5");
-        type(By.cssSelector(".fuel_consumption"),"8");
-        type(By.cssSelector(".fuel"),"petrol");
-        type(By.cssSelector(".transmition"),"automatic");
-        type(By.cssSelector(".wd"),"four-wheel drive");
-        type(By.cssSelector(".horsepower"),"231");
-        type(By.cssSelector(".torque"),"5000");
-        type(By.cssSelector(".doors"),"5");
-        type(By.cssSelector(".seats"),"7");
-        type(By.cssSelector(".class"),"A");
-        type(By.cssSelector("[name='about']"),"Crossover manufactured by the Japanese");
-        type(By.cssSelector(".type_feature"),"Car,category A");
-        type(By.cssSelector(".price"),"300");
+        //"positive test"
+     // filleRegistrationFormCar(
+        //  new NewCar("Israel", "Bora Street", "500",
+           //          "11-01-2112", "Ford", "Focus", "2013",
+            //          "1.6", "7", "petrol", "automatic",
+               //       "four-wheel drive", "200", "5000", "4", "6",
+                  //    "B", "Crossover manufactured by the America",
+                 //     "Car,category B", "100"));
+
+
+
+        //"negativ test"
+      filleRegistrationFormCar(new NewCar()
+              .withCountry("Israel").withAddress("Osher Street").withDistance_included("500")
+      .withSerial_number("07-07-1999").withBrand("Mazda").withModel("CX-9").withYear("2019")
+      .setEngine("2.8").setFuel_consumption("").setFuel("patrol").setTransmition("automat")
+      .setWd("four-wheel drive").setHorsepower("").setTorque("").setDoors("5").setSeats("7")
+      .setClaSS("A").setAbout("").setTypeFeatere("").setPrice(""));
+
 
         submitForm();
+        Assert.assertTrue(isPresentElementLetTheCarWork());
+       
+    }
+
+
+    public void filleRegistrationFormCar(NewCar newCar) {
+        type(By.cssSelector("[name='country']"), newCar.getCountry());
+        type(By.cssSelector(".address"), newCar.getAddress());
+        type(By.cssSelector(".distance_included"), newCar.getDistance_included());
+        type(By.cssSelector(".serial_number"), newCar.getSerial_number());
+        type(By.cssSelector(".brand"), newCar.getBrand());
+        type(By.cssSelector(".model"), newCar.getModel());
+        type(By.cssSelector(".year"), newCar.getYear());
+        type(By.cssSelector(".engine"), newCar.getEngine());
+        type(By.cssSelector(".fuel_consumption"), newCar.getFuel_consumption());
+        type(By.cssSelector(".fuel"), newCar.getFuel());
+        type(By.cssSelector(".transmition"), newCar.getTransmition());
+        type(By.cssSelector(".wd"), newCar.getWd());
+        type(By.cssSelector(".horsepower"), newCar.getHorsepower());
+        type(By.cssSelector(".torque"), newCar.getTorque());
+        type(By.cssSelector(".doors"), newCar.getDoors());
+        type(By.cssSelector(".seats"), newCar.getSeats());
+        type(By.cssSelector(".class"), newCar.getClaSS());
+        type(By.cssSelector("[name='about']"), newCar.getAbout());
+        type(By.cssSelector(".type_feature"), newCar.getTypeFeatere());
+        type(By.cssSelector(".price"), newCar.getPrice());
     }
 }

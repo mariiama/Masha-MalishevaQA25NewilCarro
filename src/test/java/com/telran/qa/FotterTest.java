@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class FotterTest extends TestBase {
     @BeforeMethod
     public void findElementSearch(){
-        System.out.println(""+ isPresentElementTermsOfUse());
+       // System.out.println(""+ isPresentElementTermsOfUse());
         System.out.println(""+ isPresentElementLetTheCarWork());
         System.out.println(""+ isPresentElementSearch2());
 
