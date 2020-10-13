@@ -8,9 +8,18 @@ import org.testng.annotations.Test;
 public class LetTheCarWork extends TestBase {
     @BeforeMethod
     public void ensurePriconditions(){
+        if(!isUserLoggedIn())
+            logIn();
         isPresentElementLetTheCar();
         click(By.xpath("//header/section[1]/ul[1]/li[2]/a[1]"));
     }
+
+    public void logIn() {
+        FillLoginForm(new User().withEmail("foxqa25-3@qa.co").withPassword("FoXfOxFoX1"));
+
+        submitForm();
+    }
+
     @Test
     public void testFromLetTheCar(){
         //"positive test"
@@ -35,6 +44,8 @@ public class LetTheCarWork extends TestBase {
                 .setEngine("2.8").setFuel_consumption("").setFuel("patrol").setTransmition("automat")
                 .setWd("four-wheel drive").setHorsepower("").setTorque("").setDoors("").setSeats("7")
                 .setClaSS("A").setAbout("").setTypeFeatere("").setPrice(""));
+
+        submitForm();
 
     }
 

@@ -76,7 +76,7 @@ public class TestBase {
     }
 
     public void type(By locator, String text) {
-        if(text!=null) {
+        if(text != null) {
             click(locator);
             wd.findElement(locator).click();
             wd.findElement(locator).clear();
