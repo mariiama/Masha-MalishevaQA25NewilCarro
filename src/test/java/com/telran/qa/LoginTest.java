@@ -18,7 +18,7 @@ public class LoginTest extends TestBase{
 
     @Test
     public void loginUserTest(){
-    //click(By.cssSelector(""));
+    //click(By.cssSelector("Pinas!"));
         FillLoginForm(new User().withEmail("foxqa25-3@qa.co").withPassword("FoXfOxFoX1"));
 
         submitForm();
