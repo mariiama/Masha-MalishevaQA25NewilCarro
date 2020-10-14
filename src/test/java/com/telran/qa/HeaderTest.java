@@ -8,18 +8,18 @@ public class HeaderTest extends TestBase {
 
     @BeforeMethod
     public void findElementSearch(){
-        System.out.println(""+ isPresentElementLogIn());
-        System.out.println("" + isPresentElementSingUp());
-        System.out.println("" + isPresentElementLetTheCar());
-        System.out.println(""+ isPresentElementSearch());
+        System.out.println(""+ app.getUser().isPresentElementLogIn());
+        System.out.println("" + app.getHeader().isPresentElementSingUp());
+        System.out.println("" + app.getHeader().isPresentElementLetTheCar());
+        System.out.println(""+ app.getHeader().isPresentElementSearch());
 
     }
     @Test
     public void testHeader(){
-        click(By.cssSelector("[href='/login']"));
-        click(By.cssSelector("[href='/signup']"));
-        click(By.xpath("//header/section[1]/ul[1]/li[1]/a[1]"));
-        click(By.xpath("//header/section[1]/ul[1]/li[2]/a[1]"));
+        app.getUser().click(By.cssSelector("[href='/login']"));
+        app.getHeader().openRegistationFormFromHeader();
+        app.getUser().click(By.xpath("//header/section[1]/ul[1]/li[1]/a[1]"));
+        app.getHeader().openAddCarFormHeader();
 
     }
 }
