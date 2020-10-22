@@ -18,7 +18,7 @@ public class CreateAccountTests extends TestBase {
 
     @Test
 
-    public void testSignUp() throws InterruptedException {
+    public void positiveTestSignUp() throws InterruptedException {
         app.getHeader().openRegistationFormFromHeader();
         Assert.assertTrue(app.getUser().isRegistrationFormOpened());
 

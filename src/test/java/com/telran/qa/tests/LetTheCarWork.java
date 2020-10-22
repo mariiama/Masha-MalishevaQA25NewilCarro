@@ -13,7 +13,7 @@ public class LetTheCarWork extends TestBase {
     }
 
     @Test
-    public void testFromLetTheCar(){
+    public void positiveTestFromLetTheCar(){
 
         //"positive test"
      app.getCar().filleRegistrationFormCar(new NewCar("Israel", "Bora Street", "500",
@@ -29,7 +29,7 @@ public class LetTheCarWork extends TestBase {
 
     }
     @Test
-    public void NegativeTest(){
+    public void negativeTestFromLetTheCar(){
         //"negativ test"
         app.getCar().filleRegistrationFormCar(new NewCar()
                 .withCountry("Israel").withAddress("Osher Street").withDistance_included("500")

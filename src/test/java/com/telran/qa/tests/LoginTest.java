@@ -17,16 +17,20 @@ public class LoginTest extends TestBase {
         }
     }
     @Test
-    public void loginUserTest() {
+    public void positiveLoginUserTest() {
         //click(By.cssSelector(""));
         app.getUser().FillLoginForm(new User().withEmail("foxqa25-3@qa.co").withPassword("FoXfOxFoX1"));
 
-        app.getUser().submitForm();
-        Assert.assertTrue(app.getHeader().isSingUpTabPresentInHeader());
-        String email = app.getHeader().getEmailTextFromHeader();
-        System.out.println(email);
-        Assert.assertEquals(email, "foxqa25-3@qa.co");
-
+        //app.getUser().submitForm();
+        //Assert.assertTrue(app.getHeader().isSingUpTabPresentInHeader());
+        //String email = app.getHeader().getEmailTextFromHeader();
+        //System.out.println(email);
+        //Assert.assertEquals(email, "foxqa25-3@qa.co");
+    }
+    @Test
+    public void negativeLoginUserTest(){
+        app.getUser().FillLoginForm(new User().withEmail("foxqa25-3@qa.co").withPassword(""));
+       // app.getUser().submitForm();
     }
 
 }
