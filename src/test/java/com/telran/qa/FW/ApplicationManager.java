@@ -42,4 +42,5 @@ public class ApplicationManager {
     public FooterHelper getFooter() {
         return footer;
     }
+
 }
