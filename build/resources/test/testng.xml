@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <test name="SmokyTest" >
+        <classes>
+            <class name="com.telran.qa.tests.LoginTest"/>
+            <class name="com.telran.qa.tests.CreateAccountTests">
+            <methods>
+                <exclude name=".*negative.*"  />
+            </methods>
+        </class>
+            <class name="com.telran.qa.tests.LetTheCarWork"/>
+        </classes>
+    </test>
+</suite>
