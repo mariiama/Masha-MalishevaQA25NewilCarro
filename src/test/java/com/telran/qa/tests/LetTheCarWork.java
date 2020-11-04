@@ -1,7 +1,6 @@
 package com.telran.qa.tests;
 
 import com.telran.qa.models.NewCar;
-import com.telran.qa.FW.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -39,8 +38,13 @@ public class LetTheCarWork extends TestBase {
                 .setClaSS("A").setAbout("").setTypeFeatere("").setPrice(""));
 
         app.getCar().submitForm();
+    }
+    @Test(dataProvider = "validCarFromCSV", dataProviderClass = DataProviders.class)
+    public void testFormLetTheCarWorkFromCSV(NewCar newCar) throws InterruptedException {
+       // app.getCar().filleRegistrationFormCar();
+        //app.header().click(By.cssSelector(".let-carwork-style_let_car__location__30BIh"));
+        app.getCar().filleRegistrationFormCar(newCar);
+        app.getCar().submitForm();
 
     }
-
-
 }

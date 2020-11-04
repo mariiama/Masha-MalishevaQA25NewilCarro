@@ -1,6 +1,5 @@
 package com.telran.qa.tests;
 
-import com.telran.qa.FW.TestBase;
 import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;

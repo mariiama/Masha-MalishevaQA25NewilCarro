@@ -1,6 +1,5 @@
 package com.telran.qa.tests;
 
-import com.telran.qa.FW.TestBase;
 import org.testng.annotations.Test;
 
 public class OpenHomePageTest extends TestBase {

@@ -1,11 +1,12 @@
 package com.telran.qa.FW;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
+import com.google.common.io.Files;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.NoSuchElementException;
 
 public class HelperBase {
@@ -49,7 +50,7 @@ public class HelperBase {
     }
 
     public void submitForm() {
-        new WebDriverWait(wd,15).until(ExpectedConditions.elementToBeClickable
+        new WebDriverWait(wd,10).until(ExpectedConditions.elementToBeClickable
                 (By.cssSelector("[type='submit']"))).click();
         //click(By.cssSelector("[type='submit']"));
     }
@@ -60,5 +61,14 @@ public class HelperBase {
 
     public void jumpToFooter(){
         wd.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL,Keys.END);
+    }
+    public String takeScreenshot(){
+        File tmp = ((TakesScreenshot)wd).getScreenshotAs(OutputType.FILE);
+        File screen = new File("Screenshot-"+ System.currentTimeMillis()+ ".png");
+        try {
+            Files.copy(tmp, screen);}
+        catch (IOException e){
+            e.printStackTrace();
+        }return screen.getAbsolutePath();
     }
 }
