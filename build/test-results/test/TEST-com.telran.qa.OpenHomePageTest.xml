@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telran.qa.OpenHomePageTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-08T12:47:34" hostname="DESKTOP-B688QOI" time="0.032">
+  <properties/>
+  <testcase name="homePageTest" classname="com.telran.qa.OpenHomePageTest" time="0.032"/>
+  <system-out><![CDATA[site opened!
+FindCarForm : true
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 3761
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+??? 08, 2020 3:47:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

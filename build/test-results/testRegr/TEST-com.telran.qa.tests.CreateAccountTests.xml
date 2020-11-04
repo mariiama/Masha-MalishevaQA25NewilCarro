@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telran.qa.tests.CreateAccountTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-25T17:01:24" hostname="DESKTOP-B688QOI" time="0.985">
+  <properties/>
+  <testcase name="positiveTestSignUp" classname="com.telran.qa.tests.CreateAccountTests" time="0.985"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

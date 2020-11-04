@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telran.qa.tests.LoginTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-10-25T17:01:23" hostname="DESKTOP-B688QOI" time="0.997">
+  <properties/>
+  <testcase name="negativeLoginUserTest" classname="com.telran.qa.tests.LoginTest" time="0.52"/>
+  <testcase name="positiveLoginUserTest" classname="com.telran.qa.tests.LoginTest" time="0.46"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
