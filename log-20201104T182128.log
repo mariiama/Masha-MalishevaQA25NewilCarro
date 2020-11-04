@@ -1,0 +1,20 @@
+18:21:56.161 [main] INFO  com.telran.qa.tests.TestBase - Start testtestSignUpFromCSVwith data: [User{firstName='WSA', secondName='SHA', email='1sasq1h1a1308@qa.com', password='1Qaaaaaaaaa'}]
+18:22:09.675 [main] INFO  com.telran.qa.tests.TestBase - Login form present. actual result: false expected result is: true 
+18:22:09.681 [main] INFO  com.telran.qa.tests.TestBase - PASSED: Test methodtestSignUpFromCSV
+18:22:09.682 [main] INFO  com.telran.qa.tests.TestBase - Stop test
+18:22:09.682 [main] INFO  com.telran.qa.tests.TestBase - =====
+18:22:09.684 [main] INFO  com.telran.qa.tests.TestBase - Start testtestSignUpFromCSVwith data: [User{firstName='MAQ', secondName='SHa', email='1Mash1qa1Masha@aq.com', password='q123456789'}]
+18:22:23.007 [main] ERROR com.telran.qa.tests.TestBase - FAILED: Test method testSignUpFromCSV
+18:22:25.940 [main] INFO  com.telran.qa.tests.TestBase - Screenshot:C:\m_laptop_backup\projects\QA25\Masha-MalishevaQA25NewilCarro\Screenshot-1604506945924.png
+18:22:25.940 [main] INFO  com.telran.qa.tests.TestBase - Stop test
+18:22:25.940 [main] INFO  com.telran.qa.tests.TestBase - =====
+18:22:25.941 [main] INFO  com.telran.qa.tests.TestBase - Start testtestSignUpFromCSVwith data: [User{firstName='MIQ', secondName='SHA', email='1mood1q1@gmil.com', password='wewewewewe1'}]
+18:22:39.237 [main] INFO  com.telran.qa.tests.TestBase - Login form present. actual result: false expected result is: true 
+18:22:39.238 [main] INFO  com.telran.qa.tests.TestBase - PASSED: Test methodtestSignUpFromCSV
+18:22:39.238 [main] INFO  com.telran.qa.tests.TestBase - Stop test
+18:22:39.238 [main] INFO  com.telran.qa.tests.TestBase - =====
+18:22:39.239 [main] INFO  com.telran.qa.tests.TestBase - Start testtestSignUpFromCSVwith data: [User{firstName='AQW', secondName='SQA', email='a1saa1aqa1a@qaqa.com', password='1QaaaaaaaaA'}]
+18:22:52.426 [main] ERROR com.telran.qa.tests.TestBase - FAILED: Test method testSignUpFromCSV
+18:22:55.303 [main] INFO  com.telran.qa.tests.TestBase - Screenshot:C:\m_laptop_backup\projects\QA25\Masha-MalishevaQA25NewilCarro\Screenshot-1604506975295.png
+18:22:55.303 [main] INFO  com.telran.qa.tests.TestBase - Stop test
+18:22:55.303 [main] INFO  com.telran.qa.tests.TestBase - =====
