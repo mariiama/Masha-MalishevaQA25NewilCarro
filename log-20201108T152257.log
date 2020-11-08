@@ -1,0 +1,67 @@
+15:23:12.475 [Test worker] INFO  com.telran.qa.tests.TestBase - Start testnegativeLoginUserTestwith data: []
+15:23:33.274 [Test worker] INFO  com.telran.qa.tests.TestBase - PASSED: Test methodnegativeLoginUserTest
+15:23:33.274 [Test worker] INFO  com.telran.qa.tests.TestBase - Stop test
+15:23:33.275 [Test worker] INFO  com.telran.qa.tests.TestBase - =====
+15:23:33.276 [Test worker] INFO  com.telran.qa.tests.TestBase - Start testpositiveLoginUserTestwith data: []
+15:23:33.832 [Test worker] INFO  com.telran.qa.tests.TestBase - PASSED: Test methodpositiveLoginUserTest
+15:23:33.832 [Test worker] INFO  com.telran.qa.tests.TestBase - Stop test
+15:23:33.836 [Test worker] INFO  com.telran.qa.tests.TestBase - =====
+15:23:33.840 [Test worker] INFO  com.telran.qa.tests.TestBase - Start testpositiveTestSignUpwith data: []
+15:23:38.483 [Test worker] INFO  com.telran.qa.tests.TestBase - PASSED: Test methodpositiveTestSignUp
+15:23:38.484 [Test worker] INFO  com.telran.qa.tests.TestBase - Stop test
+15:23:38.484 [Test worker] INFO  com.telran.qa.tests.TestBase - =====
+15:23:38.492 [Test worker] INFO  com.telran.qa.tests.TestBase - Start testtestSignUpFromCSVwith data: [User{firstName='WSA', secondName='SHA', email='1sasq1h1a1308@qa.com', password='1Qaaaaaaaaa'}]
+15:23:51.656 [Test worker] ERROR com.telran.qa.tests.TestBase - FAILED: Test method testSignUpFromCSV
+15:23:54.540 [Test worker] INFO  com.telran.qa.tests.TestBase - Screenshot:C:\m_laptop_backup\projects\QA25\Masha-MalishevaQA25NewilCarro\Screenshot-1604841834521.png
+15:23:54.540 [Test worker] INFO  com.telran.qa.tests.TestBase - Stop test
+15:23:54.540 [Test worker] INFO  com.telran.qa.tests.TestBase - =====
+15:23:54.541 [Test worker] INFO  com.telran.qa.tests.TestBase - Start testtestSignUpFromCSVwith data: [User{firstName='MAQ', secondName='SHa', email='1Mash1qa1Masha@aq.com', password='q123456789'}]
+15:24:07.897 [Test worker] INFO  com.telran.qa.tests.TestBase - Login form present. actual result: false expected result is: true 
+15:24:07.901 [Test worker] INFO  com.telran.qa.tests.TestBase - PASSED: Test methodtestSignUpFromCSV
+15:24:07.902 [Test worker] INFO  com.telran.qa.tests.TestBase - Stop test
+15:24:07.903 [Test worker] INFO  com.telran.qa.tests.TestBase - =====
+15:24:07.907 [Test worker] INFO  com.telran.qa.tests.TestBase - Start testtestSignUpFromCSVwith data: [User{firstName='MIQ', secondName='SHA', email='1mood1q1@gmil.com', password='wewewewewe1'}]
+15:24:21.591 [Test worker] ERROR com.telran.qa.tests.TestBase - FAILED: Test method testSignUpFromCSV
+15:24:24.516 [Test worker] INFO  com.telran.qa.tests.TestBase - Screenshot:C:\m_laptop_backup\projects\QA25\Masha-MalishevaQA25NewilCarro\Screenshot-1604841864510.png
+15:24:24.516 [Test worker] INFO  com.telran.qa.tests.TestBase - Stop test
+15:24:24.516 [Test worker] INFO  com.telran.qa.tests.TestBase - =====
+15:24:24.517 [Test worker] INFO  com.telran.qa.tests.TestBase - Start testtestSignUpFromCSVwith data: [User{firstName='AQW', secondName='SQA', email='a1saa1aqa1a@qaqa.com', password='1QaaaaaaaaA'}]
+15:24:38.010 [Test worker] INFO  com.telran.qa.tests.TestBase - Login form present. actual result: false expected result is: true 
+15:24:38.012 [Test worker] INFO  com.telran.qa.tests.TestBase - PASSED: Test methodtestSignUpFromCSV
+15:24:38.013 [Test worker] INFO  com.telran.qa.tests.TestBase - Stop test
+15:24:38.014 [Test worker] INFO  com.telran.qa.tests.TestBase - =====
+15:24:38.019 [Test worker] INFO  com.telran.qa.tests.TestBase - Start testtestSignUpFromDataProviderwith data: [fName1, lname, ln1a1me+2@gmail.com, 1Qaaaaaaa]
+15:24:52.553 [Test worker] ERROR com.telran.qa.tests.TestBase - FAILED: Test method testSignUpFromDataProvider
+15:24:55.317 [Test worker] INFO  com.telran.qa.tests.TestBase - Screenshot:C:\m_laptop_backup\projects\QA25\Masha-MalishevaQA25NewilCarro\Screenshot-1604841895311.png
+15:24:55.317 [Test worker] INFO  com.telran.qa.tests.TestBase - Stop test
+15:24:55.318 [Test worker] INFO  com.telran.qa.tests.TestBase - =====
+15:24:55.318 [Test worker] INFO  com.telran.qa.tests.TestBase - Start testtestSignUpFromDataProviderwith data: [aab, FF, 111211+2@ss.com, lkjhgfd2Q]
+15:25:09.505 [Test worker] INFO  com.telran.qa.tests.TestBase - Login form present. actual result: false expected result is: true 
+15:25:09.507 [Test worker] INFO  com.telran.qa.tests.TestBase - PASSED: Test methodtestSignUpFromDataProvider
+15:25:09.508 [Test worker] INFO  com.telran.qa.tests.TestBase - Stop test
+15:25:09.509 [Test worker] INFO  com.telran.qa.tests.TestBase - =====
+15:25:09.512 [Test worker] INFO  com.telran.qa.tests.TestBase - Start testtestSignUpFromDataProviderwith data: [112, 66, 11_1121+2@ss.com, lkjhgfd2Q]
+15:25:23.699 [Test worker] ERROR com.telran.qa.tests.TestBase - FAILED: Test method testSignUpFromDataProvider
+15:25:26.128 [Test worker] INFO  com.telran.qa.tests.TestBase - Screenshot:C:\m_laptop_backup\projects\QA25\Masha-MalishevaQA25NewilCarro\Screenshot-1604841926121.png
+15:25:26.128 [Test worker] INFO  com.telran.qa.tests.TestBase - Stop test
+15:25:26.128 [Test worker] INFO  com.telran.qa.tests.TestBase - =====
+15:25:26.130 [Test worker] INFO  com.telran.qa.tests.TestBase - Start testnegativeTestFromLetTheCarwith data: []
+15:25:31.783 [Test worker] INFO  com.telran.qa.tests.TestBase - PASSED: Test methodnegativeTestFromLetTheCar
+15:25:31.783 [Test worker] INFO  com.telran.qa.tests.TestBase - Stop test
+15:25:31.783 [Test worker] INFO  com.telran.qa.tests.TestBase - =====
+15:25:31.785 [Test worker] INFO  com.telran.qa.tests.TestBase - Start testpositiveTestFromLetTheCarwith data: []
+15:25:37.220 [Test worker] INFO  com.telran.qa.tests.TestBase - PASSED: Test methodpositiveTestFromLetTheCar
+15:25:37.221 [Test worker] INFO  com.telran.qa.tests.TestBase - Stop test
+15:25:37.221 [Test worker] INFO  com.telran.qa.tests.TestBase - =====
+15:25:37.223 [Test worker] INFO  com.telran.qa.tests.TestBase - Start testtestFormLetTheCarWorkFromCSVwith data: [Car{serialNumber='888-777-666', brand='Shkoda', model='Octavia', year='2010', price='GPS'}]
+15:25:43.282 [Test worker] INFO  com.telran.qa.tests.TestBase - PASSED: Test methodtestFormLetTheCarWorkFromCSV
+15:25:43.283 [Test worker] INFO  com.telran.qa.tests.TestBase - Stop test
+15:25:43.283 [Test worker] INFO  com.telran.qa.tests.TestBase - =====
+15:25:43.284 [Test worker] INFO  com.telran.qa.tests.TestBase - Start testtestFormLetTheCarWorkFromCSVwith data: [Car{serialNumber='888-734-667', brand='Mazda', model='CX-9', year='2019', price='ITYRAN'}]
+15:25:49.287 [Test worker] INFO  com.telran.qa.tests.TestBase - PASSED: Test methodtestFormLetTheCarWorkFromCSV
+15:25:49.288 [Test worker] INFO  com.telran.qa.tests.TestBase - Stop test
+15:25:49.288 [Test worker] INFO  com.telran.qa.tests.TestBase - =====
+15:25:49.288 [Test worker] INFO  com.telran.qa.tests.TestBase - Start testtestFormLetTheCarWorkFromCSVwith data: [Car{serialNumber='238-777-668', brand='Opel', model='Astra', year='1993', price='GPS'}]
+15:25:54.759 [Test worker] INFO  com.telran.qa.tests.TestBase - PASSED: Test methodtestFormLetTheCarWorkFromCSV
+15:25:54.759 [Test worker] INFO  com.telran.qa.tests.TestBase - Stop test
+15:25:54.759 [Test worker] INFO  com.telran.qa.tests.TestBase - =====

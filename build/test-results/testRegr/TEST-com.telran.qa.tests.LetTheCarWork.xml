@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.telran.qa.tests.LetTheCarWork" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-10-25T17:01:25" hostname="DESKTOP-B688QOI" time="9.647">
+<testsuite name="com.telran.qa.tests.LetTheCarWork" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-11-08T13:25:26" hostname="DESKTOP-QOQU6EA" time="28.517">
   <properties/>
-  <testcase name="negativeTestFromLetTheCar" classname="com.telran.qa.tests.LetTheCarWork" time="4.911"/>
-  <testcase name="positiveTestFromLetTheCar" classname="com.telran.qa.tests.LetTheCarWork" time="4.666"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="negativeTestFromLetTheCar" classname="com.telran.qa.tests.LetTheCarWork" time="5.541"/>
+  <testcase name="positiveTestFromLetTheCar" classname="com.telran.qa.tests.LetTheCarWork" time="5.37"/>
+  <testcase name="testFormLetTheCarWorkFromCSV[0](Car{serialNumber='888-777-666', brand='Shkoda', model='Octavia', year='2010', price='GPS'})" classname="com.telran.qa.tests.LetTheCarWork" time="5.96"/>
+  <testcase name="testFormLetTheCarWorkFromCSV[1](Car{serialNumber='888-734-667', brand='Mazda', model='CX-9', year='2019', price='ITYRAN'})" classname="com.telran.qa.tests.LetTheCarWork" time="5.935"/>
+  <testcase name="testFormLetTheCarWorkFromCSV[2](Car{serialNumber='238-777-668', brand='Opel', model='Astra', year='1993', price='GPS'})" classname="com.telran.qa.tests.LetTheCarWork" time="5.417"/>
+  <system-out><![CDATA[15:25:26.130 [Test worker] INFO  com.telran.qa.tests.TestBase - Start testnegativeTestFromLetTheCarwith data: []
+15:25:31.783 [Test worker] INFO  com.telran.qa.tests.TestBase - PASSED: Test methodnegativeTestFromLetTheCar
+15:25:31.783 [Test worker] INFO  com.telran.qa.tests.TestBase - Stop test
+15:25:31.783 [Test worker] INFO  com.telran.qa.tests.TestBase - =====
+15:25:31.785 [Test worker] INFO  com.telran.qa.tests.TestBase - Start testpositiveTestFromLetTheCarwith data: []
+15:25:37.220 [Test worker] INFO  com.telran.qa.tests.TestBase - PASSED: Test methodpositiveTestFromLetTheCar
+15:25:37.221 [Test worker] INFO  com.telran.qa.tests.TestBase - Stop test
+15:25:37.221 [Test worker] INFO  com.telran.qa.tests.TestBase - =====
+15:25:37.223 [Test worker] INFO  com.telran.qa.tests.TestBase - Start testtestFormLetTheCarWorkFromCSVwith data: [Car{serialNumber='888-777-666', brand='Shkoda', model='Octavia', year='2010', price='GPS'}]
+15:25:43.282 [Test worker] INFO  com.telran.qa.tests.TestBase - PASSED: Test methodtestFormLetTheCarWorkFromCSV
+15:25:43.283 [Test worker] INFO  com.telran.qa.tests.TestBase - Stop test
+15:25:43.283 [Test worker] INFO  com.telran.qa.tests.TestBase - =====
+15:25:43.284 [Test worker] INFO  com.telran.qa.tests.TestBase - Start testtestFormLetTheCarWorkFromCSVwith data: [Car{serialNumber='888-734-667', brand='Mazda', model='CX-9', year='2019', price='ITYRAN'}]
+15:25:49.287 [Test worker] INFO  com.telran.qa.tests.TestBase - PASSED: Test methodtestFormLetTheCarWorkFromCSV
+15:25:49.288 [Test worker] INFO  com.telran.qa.tests.TestBase - Stop test
+15:25:49.288 [Test worker] INFO  com.telran.qa.tests.TestBase - =====
+15:25:49.288 [Test worker] INFO  com.telran.qa.tests.TestBase - Start testtestFormLetTheCarWorkFromCSVwith data: [Car{serialNumber='238-777-668', brand='Opel', model='Astra', year='1993', price='GPS'}]
+15:25:54.759 [Test worker] INFO  com.telran.qa.tests.TestBase - PASSED: Test methodtestFormLetTheCarWorkFromCSV
+15:25:54.759 [Test worker] INFO  com.telran.qa.tests.TestBase - Stop test
+15:25:54.759 [Test worker] INFO  com.telran.qa.tests.TestBase - =====
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

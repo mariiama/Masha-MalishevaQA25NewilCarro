@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.telran.qa.tests.LoginTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-10-25T17:01:23" hostname="DESKTOP-B688QOI" time="0.997">
+<testsuite name="com.telran.qa.tests.LoginTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-11-08T13:23:32" hostname="DESKTOP-QOQU6EA" time="1.054">
   <properties/>
-  <testcase name="negativeLoginUserTest" classname="com.telran.qa.tests.LoginTest" time="0.52"/>
-  <testcase name="positiveLoginUserTest" classname="com.telran.qa.tests.LoginTest" time="0.46"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="negativeLoginUserTest" classname="com.telran.qa.tests.LoginTest" time="0.494"/>
+  <testcase name="positiveLoginUserTest" classname="com.telran.qa.tests.LoginTest" time="0.542"/>
+  <system-out><![CDATA[15:23:12.475 [Test worker] INFO  com.telran.qa.tests.TestBase - Start testnegativeLoginUserTestwith data: []
+15:23:33.274 [Test worker] INFO  com.telran.qa.tests.TestBase - PASSED: Test methodnegativeLoginUserTest
+15:23:33.274 [Test worker] INFO  com.telran.qa.tests.TestBase - Stop test
+15:23:33.275 [Test worker] INFO  com.telran.qa.tests.TestBase - =====
+15:23:33.276 [Test worker] INFO  com.telran.qa.tests.TestBase - Start testpositiveLoginUserTestwith data: []
+15:23:33.832 [Test worker] INFO  com.telran.qa.tests.TestBase - PASSED: Test methodpositiveLoginUserTest
+15:23:33.832 [Test worker] INFO  com.telran.qa.tests.TestBase - Stop test
+15:23:33.836 [Test worker] INFO  com.telran.qa.tests.TestBase - =====
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
